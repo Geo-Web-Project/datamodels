@@ -30,3 +30,13 @@ const dataStore = new DIDDataStore({ ceramic, model });
 ## [Documentation](./docs/README.md)
 
 ## Contribute
+
+Contributions are welcome! These may include, but not limited to:
+
+- Creating new custom schemas and definitions
+- Adding schemas from Schema.org
+- Creating new semantics on existing schemas and definitions
+- Adding browser support status
+- Adding examples
+
+Are you developing a browser? Get in touch in the Geo Web [Discord](https://discord.gg/reXgPru7ck).
