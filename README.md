@@ -16,6 +16,6 @@ npm install @geoweb/datamodels
 
 ## Usage
 
-## Documentation
+## [Documentation](./docs/README.md)
 
 ## Contribute
