@@ -16,6 +16,17 @@ npm install @geo-web/datamodels
 
 ## Usage
 
+This package can be used with [DIDDataStore](https://developers.ceramic.network/tools/glaze/did-datastore/#did-datastore).
+
+```js
+import GeoWebModel from "@geo-web/datamodels";
+import { DataModel } from "@glazed/datamodel";
+import { DIDDataStore } from "@glazed/did-datastore";
+
+const model = new DataModel({ ceramic, model: GeoWebModel });
+const dataStore = new DIDDataStore({ ceramic, model });
+```
+
 ## [Documentation](./docs/README.md)
 
 ## Contribute
