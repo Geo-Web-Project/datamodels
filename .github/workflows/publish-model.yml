@@ -13,7 +13,13 @@ jobs:
           node-version: 14
       - run: yarn
       - run: yarn create-model
+        env:
+          SEED: ${{ secrets.SEED }}
+          CERAMIC_HOST: ${{ secrets.CERAMIC_HOST }}
       - run: yarn publish-model
+        env:
+          SEED: ${{ secrets.SEED }}
+          CERAMIC_HOST: ${{ secrets.CERAMIC_HOST }}
 
   publish-npm:
     needs: build
