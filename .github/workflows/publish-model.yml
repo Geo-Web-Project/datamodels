@@ -21,7 +21,7 @@ jobs:
           commit_message: Update published model at src/model.json
 
   publish-npm:
-    needs: commit-model
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
