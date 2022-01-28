@@ -7,11 +7,11 @@ Referred to as the "content layer" of the Geo Web, these data models contain sch
 ## Install
 
 ```
-yarn add @geoweb/datamodels
+yarn add @geo-web/datamodels
 ```
 
 ```
-npm install @geoweb/datamodels
+npm install @geo-web/datamodels
 ```
 
 ## Usage
