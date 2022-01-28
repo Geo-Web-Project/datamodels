@@ -40,3 +40,7 @@ Contributions are welcome! These may include, but not limited to:
 - Adding examples
 
 Are you developing a browser? Get in touch in the Geo Web [Discord](https://discord.gg/reXgPru7ck).
+
+## License
+
+Dual licensed under MIT and Apache 2
