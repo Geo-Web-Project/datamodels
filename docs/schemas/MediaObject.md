@@ -16,27 +16,27 @@ A `MediaObject` can be several different types and encodings. See below for the 
 A single `MediaObject` can have one or more encodings. These encodings can be different formats or sizes of the same media. When using multiple encodings, the `encoding` property should contain an array of references to other `MediaObject`s, one for each encoding. If there is only a single encoding, the `contentUrl` property can be used.
 
 ## Browser Support
-| Property         | [Geo Web Cadastre](https://github.com/Geo-Web-Project/cadastre) |
-| ---------------- | --------------------------------------------------------------- |
-| `@type`          | ✅                                                            |
-| `name`           | ✅                                                              |
-| `contentUrl`     | ✅                                                              |
-| `contentSize`    | ❌                                                              |
-| `encodingFormat` | ✅                                                        |
-| `encoding`       | ❌                                                              |
+| Property         | [Geo Web Cadastre](https://github.com/Geo-Web-Project/cadastre) | [GeoWeb.app](https://geoweb.app) |
+| ---------------- | --------------------------------------------------------------- | -------------------------------- |
+| `@type`          | ✅                                                              | ❌                               |
+| `name`           | ✅                                                              | ✅                               |
+| `contentUrl`     | ✅                                                              | ✅                               |
+| `contentSize`    | ❌                                                              | ❌                               |
+| `encodingFormat` | ✅                                                              | ❌                               |
+| `encoding`       | ❌                                                              | ❌                                 |
 
-| Type          | Encoding             | [Geo Web Cadastre](https://github.com/Geo-Web-Project/cadastre) |
-| ------------- | -------------------- | --------------------------------------------------------------- |
-| `3DModel`     | `model/gltf-binary`  | ✅                                                              |
-| `3DModel`     | `model/vnd.usdz+zip` | ✅                                                              |
-| `ImageObject` | `image/gif`          | ✅                                                              |
-| `ImageObject` | `image/jpeg`         | ✅                                                              |
-| `ImageObject` | `image/png`          | ✅                                                              |
-| `ImageObject` | `image/svg+xml`      | ✅                                                              |
-| `AudioObject` | `audio/mpeg`         | ✅                                                              |
-| `AudioObject` | `audio/mp4`          | ✅                                                              |
-| `VideoObject` | `video/mpeg`         | ✅                                                              |
-| `VideoObject` | `video/mp4`          | ✅                                                              |
+| Type          | Encoding             | [Geo Web Cadastre](https://github.com/Geo-Web-Project/cadastre) | [GeoWeb.app](https://geoweb.app) |
+| ------------- | -------------------- | --------------------------------------------------------------- | -------------------------------- |
+| `3DModel`     | `model/gltf-binary`  | ✅                                                              | ✅                               |
+| `3DModel`     | `model/vnd.usdz+zip` | ✅                                                              | ❌                               |
+| `ImageObject` | `image/gif`          | ✅                                                              | ❌                               |
+| `ImageObject` | `image/jpeg`         | ✅                                                              | ❌                               |
+| `ImageObject` | `image/png`          | ✅                                                              | ❌                               |
+| `ImageObject` | `image/svg+xml`      | ✅                                                              | ❌                               |
+| `AudioObject` | `audio/mpeg`         | ✅                                                              | ❌                               |
+| `AudioObject` | `audio/mp4`          | ✅                                                              | ❌                               |
+| `VideoObject` | `video/mpeg`         | ✅                                                              | ❌                               |
+| `VideoObject` | `video/mp4`          | ✅                                                              | ❌                                 |
 
 ## Other Properties
 These properties exist in the schema, but are not currently supported by any browsers.

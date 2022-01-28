@@ -10,10 +10,10 @@ A **BasicProfile** contains a DID's basic profile information. This schema lives
 See [definition](../definitions/BasicProfile.md).
 
 ## Browser Support
-| Property | [Geo Web Cadastre](https://github.com/Geo-Web-Project/cadastre) |
-| -------- | --------------------------------------------------------------- |
-| `name`   | ✅                                                  |
-| `url`    | ✅                                                  |
+| Property | [Geo Web Cadastre](https://github.com/Geo-Web-Project/cadastre) | [GeoWeb.app](https://geoweb.app) |
+| -------- | --------------------------------------------------------------- | -------------------------------- |
+| `name`   | ✅                                                              | ✅                               |
+| `url`    | ✅                                                              | ❌                               |
 
 ## Other Properties
 These properties exist in the schema, but are not currently supported by any browsers.

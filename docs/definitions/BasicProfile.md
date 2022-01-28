@@ -7,7 +7,7 @@ Schema: [BasicProfile](../schemas/BasicProfile.md)
 Browsers should allow the editing and/or viewing of basic profile properties. Both the **current user** and the **land parcel** can have basic profile information.
 
 ## Browser Support
-| DID                     | [Geo Web Cadastre](https://github.com/Geo-Web-Project/cadastre) |
-| ----------------------- | --------------------------------------------------------------- |
-| Land Parcel (`did:nft`) | ✅ - Edit/view                                                  |
-| User                    | ❌                                                  |
+| DID                     | [Geo Web Cadastre](https://github.com/Geo-Web-Project/cadastre) | [GeoWeb.app](https://geoweb.app) |
+| ----------------------- | --------------------------------------------------------------- | -------------------------------- |
+| Land Parcel (`did:nft`) | ✅ - Edit/view                                                  | ✅ - View                        |
+| User                    | ❌                                                              | ❌                               |

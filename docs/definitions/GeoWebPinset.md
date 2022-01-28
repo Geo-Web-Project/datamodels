@@ -7,6 +7,6 @@ Schema: [Pinset](../schemas/Pinset.md)
 Browsers that support pinning should pin the `root` and all objects recursively.
 
 ## Browser Support
-| [Geo Web Cadastre](https://github.com/Geo-Web-Project/cadastre) |
-| --------------------------------------------------------------- |
-| ✅ - Pins all objects to Estuary                                               |
+| [Geo Web Cadastre](https://github.com/Geo-Web-Project/cadastre) | [GeoWeb.app](https://geoweb.app) |
+| --------------------------------------------------------------- | -------------------------------- |
+| ✅ - Pins all objects to Estuary                                |  ❌                                |

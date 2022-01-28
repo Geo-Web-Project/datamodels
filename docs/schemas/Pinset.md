@@ -11,9 +11,9 @@ The `root` is the CID of an IPFS object.
 See [GeoWebPinset definition](../definitions/GeoWebPinset.md).
 
 ## Browser Support
-| Property | [Geo Web Cadastre](https://github.com/Geo-Web-Project/cadastre) |
-| -------- | --------------------------------------------------------------- |
-| `root`   | ✅                                | 
+| Property | [Geo Web Cadastre](https://github.com/Geo-Web-Project/cadastre) | [GeoWeb.app](https://geoweb.app) |
+| -------- | --------------------------------------------------------------- | -------------------------------- |
+| `root`   | ✅                                                              | ❌                               |
 
 ## Other Properties
 These properties exist in the schema, but are not currently supported by any browsers.

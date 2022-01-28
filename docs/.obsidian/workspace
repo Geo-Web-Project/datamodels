@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "definitions/MediaGallery.md",
+            "file": "schemas/MediaObject.md",
             "mode": "preview",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "definitions/MediaGallery.md",
+                "file": "schemas/MediaObject.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,13 +89,13 @@
   },
   "active": "269a52ff1b913d47",
   "lastOpenFiles": [
-    "definitions/MediaGallery.md",
-    "schemas/BasicProfile.md",
-    "schemas/MediaGallery.md",
     "schemas/MediaObject.md",
+    "schemas/MediaGallery.md",
     "schemas/Pinset.md",
-    "README.md",
+    "schemas/BasicProfile.md",
+    "definitions/MediaGallery.md",
+    "definitions/GeoWebPinset.md",
     "definitions/BasicProfile.md",
-    "definitions/GeoWebPinset.md"
+    "README.md"
   ]
 }

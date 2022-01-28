@@ -5,9 +5,9 @@ An array of media object stream IDs.
 See [definition](../definitions/MediaGallery.md).
 
 ## Browser Support
-| [Geo Web Cadastre](https://github.com/Geo-Web-Project/cadastre) |
-| --------------------------------------------------------------- |
-| ✅                                                                |
+| [Geo Web Cadastre](https://github.com/Geo-Web-Project/cadastre) | [GeoWeb.app](https://geoweb.app) |
+| --------------------------------------------------------------- | -------------------------------- |
+| ✅                                                              | ✅                                 |
 
 ## Examples
 ### Single Object
