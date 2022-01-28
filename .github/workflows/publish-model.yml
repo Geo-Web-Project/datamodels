@@ -16,11 +16,6 @@ jobs:
         env:
           SEED: ${{ secrets.SEED }}
           CERAMIC_HOST: ${{ secrets.CERAMIC_HOST }}
-
-  commit-model:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update published model at src/model.json
