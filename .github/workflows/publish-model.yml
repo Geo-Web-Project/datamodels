@@ -12,10 +12,6 @@ jobs:
         with:
           node-version: 14
       - run: yarn
-      - run: yarn create-model
-        env:
-          SEED: ${{ secrets.SEED }}
-          CERAMIC_HOST: ${{ secrets.CERAMIC_HOST }}
       - run: yarn publish-model
         env:
           SEED: ${{ secrets.SEED }}
@@ -33,3 +29,16 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  commit-model:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Commit
+        run: |
+          git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
+          git pull github ${GITHUB_REF} --ff-only
+
+          git add ...
+
+          git commit -m "Update src/model.json"
+          git push github HEAD:${GITHUB_REF}
