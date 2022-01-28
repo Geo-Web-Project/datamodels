@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MediaGallery",
+  "type": "object",
+  "properties": {
+    "mediaGalleryItems": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/MediaObject"
+      }
+    }
+  },
+  "definitions": {
+    "MediaObjectStreamId": {
+      "type": "string",
+      "maxLength": 150,
+      "$comment": "cip88:ref:ceramic://kjzl6cwe1jw1487icn68i9e5rd6vqcab38iz4tyb3wl62fg35bbttt3z6ika5v6"
+    }
+  }
+}

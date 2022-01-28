@@ -3,21 +3,23 @@
   "version": "1.0.0",
   "description": "Ceramic Data Models for the Geo Web",
   "scripts": {
-    "types": "del types && json2ts -i schemas -o types",
     "create-model": "node --experimental-json-modules ./scripts/create-model.mjs",
     "publish-model": "node --experimental-json-modules ./scripts/publish-model.mjs"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "schema-org-ceramic": "^1.0.2",
-    "@glazed/types": "^0.1.3",
     "@ceramicnetwork/http-client": "^1.5.7",
+    "@datamodels/identity-profile-basic": "^0.1.2",
     "@glazed/devtools": "^0.1.3",
+    "@glazed/types": "^0.1.3",
     "dids": "^2.4.3",
+    "fast-json-patch": "^3.1.0",
     "key-did-provider-ed25519": "^1.1.0",
     "key-did-resolver": "^1.4.4",
     "lodash": "^4.17.21",
+    "prettier": "^2.5.1",
+    "schema-org-ceramic": "^1.1.0",
     "uint8arrays": "^3.0.0"
   },
   "engines": {

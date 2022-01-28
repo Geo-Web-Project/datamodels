@@ -1,6 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { CeramicClient } from "@ceramicnetwork/http-client";
 import { ModelManager } from "@glazed/devtools";
+import prettier from "prettier";
 
 if (!process.env.CERAMIC_HOST) {
   throw new Error("Missing CERAMIC_HOST environment variable");
@@ -17,7 +18,7 @@ const manager = ModelManager.fromJSON(ceramic, JSON.parse(bytes.toString()));
 const model = await manager.toPublished();
 await writeFile(
   new URL("../src/model.json", import.meta.url),
-  JSON.stringify(model)
+  prettier.format(JSON.stringify(model), { parser: "json" })
 );
 
 console.log("Model written to src/model.json file:", model);
