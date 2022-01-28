@@ -1,6 +1,6 @@
 {
   "name": "@geo-web/datamodels",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Ceramic Data Models for the Geo Web",
   "scripts": {
     "create-model": "node --experimental-json-modules ./scripts/create-model.mjs",
