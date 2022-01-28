@@ -1,5 +1,5 @@
 {
-  "name": "@geoweb/datamodels",
+  "name": "@geo-web/datamodels",
   "version": "1.0.0",
   "description": "Ceramic Data Models for the Geo Web",
   "scripts": {
@@ -25,12 +25,5 @@
   "engines": {
     "node": ">=14"
   },
-  "main": "dist/model.cjs",
-  "module": "dist/model.mjs",
-  "typings": "dist/model.d.ts",
-  "exports": {
-    "import": "./dist/model.mjs",
-    "require": "./dist/model.cjs",
-    "default": "./dist/model.cjs"
-  }
+  "main": "src/model.json"
 }
