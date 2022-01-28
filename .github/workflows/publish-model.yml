@@ -1,0 +1,35 @@
+name: Publish Model
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - run: yarn
+      - run: yarn publish-model
+        env:
+          SEED: ${{ secrets.SEED }}
+          CERAMIC_HOST: ${{ secrets.CERAMIC_HOST }}
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update published model at src/model.json
+          branch: main
+
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          registry-url: https://registry.npmjs.org/
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
