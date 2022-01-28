@@ -9,7 +9,7 @@ import { createModel } from "schema-org-ceramic";
 import fs from "fs";
 import { TileDocument } from "@ceramicnetwork/stream-tile";
 import jsonpatch from "fast-json-patch";
-import { models } from "../schemas/datamodels.mjs";
+import { models } from "../datamodels.mjs";
 
 if (!process.env.SEED) {
   throw new Error("Missing SEED environment variable");
@@ -77,6 +77,32 @@ for (const schemaFile of fs.readdirSync(schemasPath)) {
       console.log(
         `No changes detected for schema ${schema.title} -> ${schemaId}`
       );
+    }
+  }
+}
+
+// Load custom definitions
+const definitionsDir = "../definitions/custom";
+const definitionsPath = new URL(definitionsDir, import.meta.url);
+
+for (const defFile of fs.readdirSync(definitionsPath)) {
+  const alias = defFile.split(".json")[0];
+  const definition = JSON.parse(
+    await readFile(new URL(`${definitionsDir}/${defFile}`, import.meta.url))
+  );
+  let defId = manager.getDefinitionID(alias);
+  if (!defId) {
+    defId = await manager.createDefinition(alias, definition);
+    console.log(`Created definition ${alias} -> ${defId}`);
+  } else {
+    const doc = await TileDocument.load(ceramic, defId);
+    const patch = jsonpatch.compare(doc.content, definition);
+
+    if (patch.length > 0) {
+      doc.update(definition);
+      console.log(`Updated definition ${alias} -> ${defId}`);
+    } else {
+      console.log(`No changes detected for definition ${alias} -> ${defId}`);
     }
   }
 }

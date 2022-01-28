@@ -1,9 +1,11 @@
 {
   "definitions": {
-    "basicProfile": "kjzl6cwe1jw145cjbeko9kil8g9bxszjhyde21ob8epxuxkaon1izyqsu8wgcic"
+    "basicProfile": "kjzl6cwe1jw145cjbeko9kil8g9bxszjhyde21ob8epxuxkaon1izyqsu8wgcic",
+    "geoWebPinset": "kjzl6cwe1jw1469cf7zcgotn91k6w5ctvtlw5nn4sxzszbyxpbqu0lfi86aro16",
+    "mediaGallery": "kjzl6cwe1jw146dqfb55bhqub79hbakmsm2ipmk73vspfa56ya9o7n0hq1tfd8g"
   },
   "schemas": {
-    "MediaObject": "ceramic://k1dpgaqe3i64kjsedomvwamxzouiwshhu2u90k7u1wcs9qb5hs8kjz28bninm9zwydjjvytpg4gt8uo69qra1c9aq2g9zziosacnee6u784nlgtrczrqd179y",
+    "MediaObject": "ceramic://k1dpgaqe3i64kjsedomvwamxzouiwshhu2u90k7u1wcs9qb5hs8kjz28bninm9zwydjjvytpc2wx7111biz8zoebw7gvnel0ci8041ajktc64l2f1xw5sijuj",
     "NewsArticle": "ceramic://k1dpgaqe3i64kjz9j0byb0k4fjh146l1o8spc6yq9q3b2w23lurxvd4k9o6etfcoo5q20z0veexwt82j4ouuzco13o4t1fpw8v38zlirmt46shgqsavchwp0x",
     "CreativeWork": "ceramic://k1dpgaqe3i64kjpkhl8jzxba868zcfti9d5x0p479tkxwat734m01z696d5uhsi04xjv9gq3hmmys38g6af8lq9zesxtq2hm94g8ywcofphkb369om7ig5rlb",
     "QuantitativeValue": "ceramic://k1dpgaqe3i64kjol0zmn4dokbk0imlhwlmpl6blvvqttt86k5ne3nxyxba6xu7r53ea5iyiex7aecwm5r422xmi95lepe9v3ss3skojp75th53aixf62x4s6c",
