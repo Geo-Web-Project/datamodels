@@ -11,3 +11,5 @@ Browsers should allow the editing and/or viewing of basic profile properties. Bo
 | ----------------------- | --------------------------------------------------------------- | -------------------------------- |
 | Land Parcel (`did:nft`) | ✅ - Edit/view                                                  | ✅ - View                        |
 | User                    | ❌                                                              | ❌                               |
+
+## [Discussion](https://forum.geoweb.network/t/content-basic-profile/59)

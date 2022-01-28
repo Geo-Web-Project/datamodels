@@ -42,3 +42,5 @@ A single `MediaObject` can have one or more encodings. These encodings can be di
 These properties exist in the schema, but are not currently supported by any browsers.
 
 See [Schema.org](https://schema.org/MediaObject).
+
+## [Discussion](https://forum.geoweb.network/t/content-media-gallery-and-objects/61)

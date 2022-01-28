@@ -19,3 +19,5 @@ See [definition](../definitions/BasicProfile.md).
 These properties exist in the schema, but are not currently supported by any browsers.
 
 See [@datamodels](https://github.com/ceramicstudio/datamodels/tree/main/packages/identity-profile-basic).
+
+## [Discussion](https://forum.geoweb.network/t/content-basic-profile/59)

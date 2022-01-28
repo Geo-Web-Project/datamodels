@@ -23,3 +23,5 @@ See [definition](../definitions/MediaGallery.md).
  "ceramic://kjzl6cwe1j.....bbttt3z6ika5v6"
 ]
 ```
+
+## [Discussion](https://forum.geoweb.network/t/content-media-gallery-and-objects/61)

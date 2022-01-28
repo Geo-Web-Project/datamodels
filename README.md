@@ -41,6 +41,8 @@ Contributions are welcome! These may include, but not limited to:
 
 Are you developing a browser? Get in touch in the Geo Web [Discord](https://discord.gg/reXgPru7ck).
 
+Anyone can also participate in [discussions](https://forum.geoweb.network/c/protocol/content-layer/12) and earn cred.
+
 ## License
 
 Dual licensed under MIT and Apache 2

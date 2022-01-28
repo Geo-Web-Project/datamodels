@@ -19,3 +19,5 @@ See [GeoWebPinset definition](../definitions/GeoWebPinset.md).
 These properties exist in the schema, but are not currently supported by any browsers.
 
 None.
+
+## [Discussion](https://forum.geoweb.network/t/content-geo-web-pinset/60)

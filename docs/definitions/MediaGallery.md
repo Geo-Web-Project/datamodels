@@ -9,5 +9,7 @@ Browsers should allow the owner to add or remove objects from the gallery and al
 ## Browser Support
 | Operation | [Geo Web Cadastre](https://github.com/Geo-Web-Project/cadastre) | [GeoWeb.app](https://geoweb.app) |
 | --------- | --------------------------------------------------------------- | -------------------------------- |
-| Edit      | ✅                                                              | ❌                                 |
-| View      | ⚠️ - Only owned parcels                                         | ✅                                 |
+| Edit      | ✅                                                              | ❌                               |
+| View      | ⚠️ - Only owned parcels                                         | ✅                               |
+
+## [Discussion](https://forum.geoweb.network/t/content-media-gallery-and-objects/61)
