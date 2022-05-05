@@ -3,8 +3,10 @@
   "version": "1.0.3",
   "description": "Ceramic Data Models for the Geo Web",
   "scripts": {
+    "types": "rimraf types && json2ts -i schemas/custom -o types",
     "create-model": "node --experimental-json-modules ./scripts/create-model.mjs",
-    "publish-model": "node --experimental-json-modules ./scripts/publish-model.mjs"
+    "publish-model": "node --experimental-json-modules ./scripts/publish-model.mjs",
+    "write-schemas": "node --experimental-json-modules ./scripts/write-schemas.mjs"
   },
   "author": "",
   "license": "MIT",
@@ -15,15 +17,30 @@
     "@glazed/types": "^0.1.3",
     "dids": "^2.4.3",
     "fast-json-patch": "^3.1.0",
-    "key-did-provider-ed25519": "^1.1.0",
+    "key-did-provider-ed25519": "^2.0.0",
     "key-did-resolver": "^1.4.4",
     "lodash": "^4.17.21",
     "prettier": "^2.5.1",
-    "schema-org-ceramic": "^1.1.1",
+    "schema-org-ceramic": "^1.2.0",
     "uint8arrays": "^3.0.0"
   },
   "engines": {
     "node": ">=14"
   },
-  "main": "src/model.json"
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "schemas",
+    "types"
+  ],
+  "devDependencies": {
+    "json-schema-to-typescript": "^10.1.5",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.4"
+  }
 }

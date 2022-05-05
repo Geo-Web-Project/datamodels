@@ -6,7 +6,7 @@
     "mediaGalleryItems": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/MediaObject"
+        "$ref": "#/definitions/MediaObjectStreamId"
       }
     }
   },
