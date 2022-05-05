@@ -6,7 +6,10 @@
     "types": "rimraf types && json2ts -i schemas/custom -o types",
     "create-model": "node --experimental-json-modules ./scripts/create-model.mjs",
     "publish-model": "node --experimental-json-modules ./scripts/publish-model.mjs",
-    "write-schemas": "node --experimental-json-modules ./scripts/write-schemas.mjs"
+    "write-schemas": "node --experimental-json-modules ./scripts/write-schemas.mjs",
+    "build:clean": "rimraf dist",
+    "build:js": "tsc -p tsconfig.build.json",
+    "build": "yarn build:clean && yarn types && yarn build:js"
   },
   "author": "",
   "license": "MIT",
