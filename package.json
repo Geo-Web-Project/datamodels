@@ -1,6 +1,6 @@
 {
   "name": "@geo-web/datamodels",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "description": "Ceramic Data Models for the Geo Web",
   "scripts": {
     "types": "rimraf types && json2ts -i schemas/custom -o types",
@@ -30,7 +30,6 @@
   "engines": {
     "node": ">=14"
   },
-  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
