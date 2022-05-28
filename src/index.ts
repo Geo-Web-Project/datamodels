@@ -1,4 +1,4 @@
-import type { ModelTypeAliases } from "@glazed/types";
+import type { ModelTypeAliases, ModelTypesToAliases } from "@glazed/types";
 import { BasicProfile } from "@datamodels/identity-profile-basic";
 import { MediaGallery } from "../types/MediaGallery";
 import { Pinset } from "../types/Pinset";
@@ -13,14 +13,14 @@ export type ModelTypes = ModelTypeAliases<
   {
     BasicProfile: BasicProfile;
     MediaGallery: MediaGallery;
-    GeoWebPinset: Pinset;
-    MediaGalleryItem: MediaObject;
+    Pinset: Pinset;
+    MediaObject: MediaObject;
   },
   {
     basicProfile: "BasicProfile";
     mediaGallery: "MediaGallery";
-    geoWebPinset: "GeoWebPinset";
+    geoWebPinset: "Pinset";
   }
 >;
 
-export const model = allModels;
+export const model: ModelTypesToAliases<ModelTypes> = allModels;
