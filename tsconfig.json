@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "module": "ES2020",
+    "module": "CommonJS",
     "target": "ES2020",
     "declaration": true,
-    "emitDeclarationOnly": true,
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -14,5 +13,5 @@
     "outDir": "./dist",
     "resolveJsonModule": true
   },
-  "include": ["src"]
+  "include": ["src/*"]
 }

@@ -1,6 +1,6 @@
 {
   "name": "@geo-web/datamodels",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "Ceramic Data Models for the Geo Web",
   "scripts": {
     "types": "rimraf types && json2ts -i schemas/custom -o types",
@@ -8,7 +8,7 @@
     "publish-model": "node --experimental-json-modules ./scripts/publish-model.mjs",
     "write-schemas": "node --experimental-json-modules ./scripts/write-schemas.mjs",
     "build:clean": "rimraf dist",
-    "build:js": "tsc -p tsconfig.build.json",
+    "build:js": "tsc",
     "build": "yarn build:clean && yarn types && yarn build:js"
   },
   "author": "",
