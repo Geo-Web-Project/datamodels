@@ -1,6 +1,6 @@
 {
   "name": "@geo-web/datamodels",
-  "version": "2.3.5",
+  "version": "2.4.0",
   "description": "Ceramic Data Models for the Geo Web",
   "scripts": {
     "types": "rimraf types && json2ts -i schemas/custom -o types",
