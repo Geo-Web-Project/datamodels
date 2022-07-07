@@ -8,9 +8,9 @@
 export type IPFSUrl = string;
 
 /**
- * A simple schema for storing a set of CIDs
+ * A simple schema for storing a CID that represents the root of a pinset
  */
 export interface Pinset {
-  items: IPFSUrl[];
+  root: IPFSUrl;
   [k: string]: unknown;
 }
