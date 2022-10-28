@@ -81,6 +81,13 @@ for (const schemaFile of fs.readdirSync(schemasPath)) {
   }
 }
 
+// Write model to JSON file
+await writeFile(
+  new URL("model.json", import.meta.url),
+  JSON.stringify(manager.toJSON())
+);
+console.log("Encoded model written to scripts/model.json file");
+
 // Load custom definitions
 const definitionsDir = "../definitions/custom";
 const definitionsPath = new URL(definitionsDir, import.meta.url);
